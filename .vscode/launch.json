@@ -80,33 +80,18 @@
       "name": "Python: Flask (0.11.x or later)",
       "type": "python",
       "request": "launch",
-      "stopOnEntry": false,
-      "pythonPath": "${config:python.pythonPath}",
+      // "stopOnEntry": false,
+      // "pythonPath": "${config:python.pythonPath}",
       "module": "flask",
       "cwd": "${workspaceFolder}",
       "env": {
-        "FLASK_APP": "${workspaceFolder}/app.py"
+        "FLASK_APP": "${workspaceFolder}/src/app.py"
       },
       "args": [
         "run",
         "--no-debugger",
         "--no-reload"
       ],
-      "envFile": "${workspaceFolder}/.env",
-      "debugOptions": [
-        "RedirectOutput"
-      ]
-    },
-    {
-      "name": "Python: Flask (0.10.x or earlier)",
-      "type": "python",
-      "request": "launch",
-      "stopOnEntry": false,
-      "pythonPath": "${config:python.pythonPath}",
-      "program": "${workspaceFolder}/run.py",
-      "cwd": "${workspaceFolder}",
-      "args": [],
-      "env": {},
       "envFile": "${workspaceFolder}/.env",
       "debugOptions": [
         "RedirectOutput"
